@@ -1,0 +1,18 @@
+:root {}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.character-card {
+  border: solid 1px red;
+}
+.character-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}

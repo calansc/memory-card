@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
-function Card() {
-
+function Card(id, name, img) {
     return (
-        <div className="card">
-            <img src="src/assets/characters/Beth_Dutton.webp" />
+        <div className="card" id={id}>
+            <img className="character-image" src={img} />
+            <div className="character-name">{name}</div>
         </div>
     )
 }
