@@ -1,6 +1,6 @@
 @font-face {
   font-family: bronco;
-  src: url("src/assets/fonts/bronco/BroncoPersonalUse.ttf")
+  src: url("./assets/fonts/bronco/BroncoPersonalUse.ttf")
 }
 :root {
   --yellowstone: rgb(234,155,39);
@@ -122,7 +122,7 @@ body {}
   text-align: right;
 }
 .game-board {
-  background: url("src/assets/dutton-cattle.webp") no-repeat 25% fixed;
+  background: url("./assets/dutton-cattle.webp") no-repeat 25% fixed;
   background-size: cover;
   min-height:100vh;
   padding: 2rem;  
