@@ -39,6 +39,8 @@ function App() {
             // alert('You Lose, Try Again!');
             document.querySelector(".loser-container").style.display = 'block';
             document.querySelector(".loser-container").style.visibility = 'visible';
+            document.querySelector("body").style.overflow = 'hidden';
+            window.scrollTo(0, 0);
             setScore(0);
             setPickList([]);
         } else if (score === newCharacters.length-1) {
@@ -55,7 +57,7 @@ function App() {
 
     function pickDifficulty(e) {
         setDifficulty(e.target.id)
-        // const hide = { "display: none" } as React.CSSProperties;
+        document.body.style.overflow = 'visible';
     }
     useEffect(() => {
         if (difficulty > 0) {
@@ -66,6 +68,7 @@ function App() {
     function handleTryAgain() {
         document.querySelector(".loser-container").style.display = 'none';
         document.querySelector(".loser-container").style.visibility = 'invisible';
+        document.body.style.overflow = 'visible';
     }
     function handlePlayAgain() {
         document.querySelector(".winner-container").style.display = 'none';
