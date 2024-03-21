@@ -52,6 +52,7 @@ body {}
   display:grid;
   grid-auto-flow: row;
   padding: 8px;
+  border-radius: 8px;
 }
 .winner-restart, .loser-restart {
   margin: 20px;
@@ -92,6 +93,7 @@ body {}
   text-align: center;
   font-size: 1.5rem;
   padding: 8px;
+  border-radius: 8px;
 }
 .difficulty-button {
   margin: 20px;
